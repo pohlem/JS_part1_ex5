@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice_5</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+  <form>
+    <label for="firstNumber">Premier nombre : </label><input type="text" id="firstNumber" name="firstNumber"/><br/>
+    <label for="secondNumber">Deuxième nombre : </label><input type="text" id="secondNumber" name="secondNumber"/><br/>
+    <button  id="submit" name ="submit" onclick="show()">Valider</button>
+</form>
+<script type="text/javascript">
+    function show(){
+        var first = parseInt(document.getElementById("firstNumber").value);
+        var second = parseFloat(document.getElementById("secondNumber").value);
+        var result = first*second;
+        alert("Résultat : "+result);
+    }
+</script>
+</body>
+</html>
